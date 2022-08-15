@@ -12,27 +12,36 @@
   </head>
   <body>
 
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="post">
       <fieldset>
         <legend>Personal information</legend>
 
-        <label for="usr">Surname:</label>
+        <label for="username">
+          Surname:
+        </label>
         <input
           class="marginStl"
           autocomplete="off"
           type="text"
           name="surname"
-          id="usr"><br>
+          id="username"
+          ><br>
 
-        <label for="nm">Name:</label>
+        <label for="name">
+          Name:
+        </label>
         <input
           class="marginStl"
           autocomplete="off"
           type="text"
           name="surname"
-          id="nm"><br>
+          id="name"
+          ><br>
 
-        <label for="tentacles">How old are You?</label>
+        <label for="tentacles">
+          How old are You?
+        </label>
         <input
           class="marginStl"
           type="number"
@@ -40,27 +49,36 @@
           id="tentacles"
           min="1"
           max="100"
-          value="12"><br>
+          value="12"
+          ><br>
 
-        <label for="dt">Full date of birth:</label>
+        <label for="fullDate">
+          Full date of birth:
+        </label>
         <input
           class="marginStl"
           type="date"
           name="trip-start"
-          id="dt"><br>
+          id="fullDate"
+          ><br>
 
-        <label for="plc">I accept the term of the agreement</label>
+        <label for="policy">
+          I accept the term of the agreement
+        </label>
         <input
           type="checkbox"
           name="policy-agree"
-          id="plc">
+          id="policy"
+          >
 
       </fieldset>
 
       <fieldset>
         <legend>Registration</legend>
 
-        <label for="eml">E-mail:</label>
+        <label for="email">
+          E-mail:
+        </label>
         <input
           class="marginStl"
           autocomplete="off"
@@ -68,51 +86,68 @@
           placeholder="email@example.com"
           type="email"
           name="email"
-          id="eml"><br>
+          id="email"
+          ><br>
 
-        <label for="pss" required>Password:</label>
+        <label for="password" required>
+          Password:
+        </label>
         <input
           required
           autocomplete="off"
           type="password"
           name="password"
-          id="pss"
+          id="password"
           minlength="6"
-          maxlength="25"><br>
+          maxlength="25"
+          ><br>
 
       </fieldset>
 
       <fieldset>
         <legend>An interesting fact about you!</legend>
+
         <div class="marginStl">
-          <label for="chs">Do you love cats?</label>
+          <label for="chooseAnswer">
+            Do you love cats?
+          </label>
           <input
             type="radio"
             name="sex"
-            id="chs">Yes
+            id="chooseAnswer"
+            >Yes
 
           <input
             type="radio"
             name="sex"
-            id="chs2">No<br>
+            id="chooseAnswer2"
+            >No<br>
         </div>
 
-        <label for="clr">What is your favorite color?</label>
+        <label for="color">
+          What is your favorite color?
+        </label>
         <input
           class="marginStl"
           type="color"
           name="color"
-          id="clr"><br>
+          id="color"
+          ><br>
 
-        <label for="tm">What time do you go to bed?</label>
+        <label for="chooseTime">
+          What time do you go to bed?
+        </label>
         <input
           class="marginStl"
           type="time"
           name="time"
-          id="tm"><br>
+          id="chooseTime"
+          ><br>
 
         <div class="marginStl">
-          <label for="wt">What are your favorite brand of cars?</label>
+          <label for="chooseCar">
+            What are your favorite brand of cars?
+          </label>
           <select name="car"multiple>
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
@@ -120,25 +155,32 @@
           </select><br>
         </div>
 
-        <label for="rt">How do you rate our work?</label>
+        <label for="rate">
+          How do you rate our work?
+        </label>
         <input
           type="range"
           name="range-rate"
-          id="rt"
-          value="0"><br>
+          id="rate"
+          value="0"
+          ><br>
 
       </fieldset>
 
       <fieldset>
         <legend>Additional info:</legend>
         <div class="marginStl">
-          <label for="cmnt">Comments:</label>
-          <textarea name="comment" id="cmnt"></textarea>
+          <label for="comments">
+            Comments:
+          </label>
+          <textarea name="comment" id="comments"></textarea>
         </div>
 
         <div>
-          <label for="rcmnd">Would you recommend us?</label>
-          <select name="car">
+          <label for="recommend">
+            Would you recommend us?
+          </label>
+          <select name="chooseRecomendation">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select><br>
