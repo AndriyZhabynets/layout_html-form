@@ -13,97 +13,101 @@
   <body>
 
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset>
-        <legend>Personal information</legend>
+      <fieldset class="fieldsetStl">
+        <legend>
+          Personal information
+        </legend>
 
         <label for="username">
           Surname:
+          <input
+            class="marginStl"
+            autocomplete="off"
+            type="text"
+            name="surname"
+            id="username"
+          >
         </label>
-        <input
-          class="marginStl"
-          autocomplete="off"
-          type="text"
-          name="surname"
-          id="username"
-          ><br>
 
-        <label for="name">
+        <label for="name" class="position">
           Name:
+          <input
+            class="marginStl"
+            autocomplete="off"
+            type="text"
+            name="surname"
+            id="name"
+          >
         </label>
-        <input
-          class="marginStl"
-          autocomplete="off"
-          type="text"
-          name="surname"
-          id="name"
-          ><br>
 
-        <label for="tentacles">
+        <label for="tentacles" class="position">
           How old are You?
+          <input
+            class="marginStl"
+            type="number"
+            name="tentacles"
+            id="tentacles"
+            min="1"
+            max="100"
+            value="12"
+          >
         </label>
-        <input
-          class="marginStl"
-          type="number"
-          name="tentacles"
-          id="tentacles"
-          min="1"
-          max="100"
-          value="12"
-          ><br>
 
-        <label for="fullDate">
+        <label for="fullDate" class="position">
           Full date of birth:
+          <input
+            class="marginStl"
+            type="date"
+            name="trip-start"
+            id="fullDate"
+          >
         </label>
-        <input
-          class="marginStl"
-          type="date"
-          name="trip-start"
-          id="fullDate"
-          ><br>
 
         <label for="policy">
           I accept the term of the agreement
-        </label>
-        <input
-          type="checkbox"
-          name="policy-agree"
-          id="policy"
+          <input
+            type="checkbox"
+            name="policy-agree"
+            id="policy"
           >
+        </label>
 
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldsetStl">
         <legend>Registration</legend>
 
-        <label for="email">
+        <label for="email" class="position">
           E-mail:
+          <input
+            class="marginStl"
+            autocomplete="off"
+            required
+            placeholder="email@example.com"
+            type="email"
+            name="email"
+            id="email"
+          >
         </label>
-        <input
-          class="marginStl"
-          autocomplete="off"
-          required
-          placeholder="email@example.com"
-          type="email"
-          name="email"
-          id="email"
-          ><br>
 
-        <label for="password" required>
+        <label
+          for="password"
+          class="position"
+          required>
           Password:
+          <input
+            required
+            autocomplete="off"
+            type="password"
+            name="password"
+            id="password"
+            minlength="6"
+            maxlength="25"
+          >
         </label>
-        <input
-          required
-          autocomplete="off"
-          type="password"
-          name="password"
-          id="password"
-          minlength="6"
-          maxlength="25"
-          ><br>
-
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldsetStl">
         <legend>An interesting fact about you!</legend>
 
         <div class="marginStl">
@@ -114,24 +118,26 @@
             type="radio"
             name="sex"
             id="chooseAnswer"
-            >Yes
+          >
+          Yes
 
           <input
             type="radio"
             name="sex"
             id="chooseAnswer2"
-            >No<br>
+          >
+          No
         </div>
 
-        <label for="color">
+        <label for="color" class="position">
           What is your favorite color?
+          <input
+            class="marginStl"
+            type="color"
+            name="color"
+            id="color"
+          >
         </label>
-        <input
-          class="marginStl"
-          type="color"
-          name="color"
-          id="color"
-          ><br>
 
         <label for="chooseTime">
           What time do you go to bed?
@@ -141,7 +147,7 @@
           type="time"
           name="time"
           id="chooseTime"
-          ><br>
+        >
 
         <div class="marginStl">
           <label for="chooseCar">
@@ -151,7 +157,7 @@
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
-          </select><br>
+          </select>
         </div>
 
         <label for="rate">
@@ -162,11 +168,11 @@
           name="range-rate"
           id="rate"
           value="0"
-          ><br>
+        >
 
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldsetStl">
         <legend>Additional info:</legend>
         <div class="marginStl">
           <label for="comments">
@@ -182,7 +188,7 @@
           <select name="chooseRecomendation">
             <option value="yes">yes</option>
             <option value="no">no</option>
-          </select><br>
+          </select>
         </div>
 
       </fieldset>

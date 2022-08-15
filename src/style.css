@@ -3,6 +3,10 @@
   margin-bottom: 10px;
 }
 
-fieldset {
+.position {
+  display: block;
+}
+
+.fieldsetStl {
   margin-bottom: 20px;
 }
