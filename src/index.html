@@ -12,7 +12,7 @@
   </head>
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset class="fieldsetStl">
+      <fieldset class="fieldset">
         <legend>
           Personal information
         </legend>
@@ -20,7 +20,7 @@
         <label for="username">
           Surname:
           <input
-            class="marginStl"
+            class="input-field"
             autocomplete="off"
             type="text"
             name="surname"
@@ -28,10 +28,10 @@
           >
         </label>
 
-        <label for="name" class="position">
+        <label for="name" class="label">
           Name:
           <input
-            class="marginStl"
+            class="input-field"
             autocomplete="off"
             type="text"
             name="surname"
@@ -39,10 +39,10 @@
           >
         </label>
 
-        <label for="tentacles" class="position">
+        <label for="tentacles" class="label">
           How old are You?
           <input
-            class="marginStl"
+            class="input-field"
             type="number"
             name="tentacles"
             id="tentacles"
@@ -52,10 +52,10 @@
           >
         </label>
 
-        <label for="fullDate" class="position">
+        <label for="fullDate" class="label">
           Full date of birth:
           <input
-            class="marginStl"
+            class="input-field"
             type="date"
             name="trip-start"
             id="fullDate"
@@ -73,13 +73,13 @@
 
       </fieldset>
 
-      <fieldset class="fieldsetStl">
+      <fieldset class="fieldset">
         <legend>Registration</legend>
 
-        <label for="email" class="position">
+        <label for="email" class="label">
           E-mail:
           <input
-            class="marginStl"
+            class="input-field"
             autocomplete="off"
             required
             placeholder="email@example.com"
@@ -91,8 +91,9 @@
 
         <label
           for="password"
-          class="position"
-          required>
+          class="label"
+          required
+        >
           Password:
           <input
             required
@@ -106,10 +107,10 @@
         </label>
       </fieldset>
 
-      <fieldset class="fieldsetStl">
+      <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
 
-        <div class="marginStl">
+        <div class="input-field">
           <label for="chooseAnswer chooseAnswer2">
             Do you love cats?
             <input
@@ -129,10 +130,10 @@
         </div>
 
 
-        <label for="color" class="position">
+        <label for="color" class="label">
           What is your favorite color?
           <input
-            class="marginStl"
+            class="input-field"
             type="color"
             name="color"
             id="color"
@@ -143,13 +144,13 @@
           What time do you go to bed?
         </label>
         <input
-          class="marginStl"
+          class="input-field"
           type="time"
           name="time"
           id="chooseTime"
         >
 
-        <div class="marginStl">
+        <div class="input-field">
           <label for="chooseCar">
             What are your favorite brand of cars?
           </label>
@@ -169,12 +170,11 @@
           id="rate"
           value="0"
         >
-
       </fieldset>
 
-      <fieldset class="fieldsetStl">
+      <fieldset class="fieldset">
         <legend>Additional info:</legend>
-        <div class="marginStl">
+        <div class="input-field">
           <label for="comments">
             Comments:
           </label>
@@ -185,7 +185,7 @@
           <label for="recommend">
             Would you recommend us?
           </label>
-          <select name="chooseRecomendation">
+          <select name="recomendation">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>

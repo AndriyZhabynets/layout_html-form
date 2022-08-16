@@ -1,12 +1,11 @@
-/* styles go here */
-.marginStl {
+.input-field {
   margin-bottom: 10px;
 }
 
-.position {
+.label {
   display: block;
 }
 
-.fieldsetStl {
+.fieldset {
   margin-bottom: 20px;
 }
